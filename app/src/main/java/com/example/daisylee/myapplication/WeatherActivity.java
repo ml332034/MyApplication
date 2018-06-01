@@ -1,0 +1,30 @@
+package com.example.daisylee.myapplication;
+
+import android.annotation.SuppressLint;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
+
+
+
+
+@SuppressLint("Registered")
+public class WeatherActivity extends AppCompatActivity {
+
+
+    @SuppressLint("SetJavaScriptEnabled")
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.weather_info);
+
+        WebView webview = (WebView) findViewById(R.id.webview);
+        WebSettings webSettings = webview.getSettings();
+        webSettings.setJavaScriptEnabled(true);
+        setContentView(webview);
+        webview.setWebViewClient(new WebViewClient());
+        webview.loadUrl("https://www.cwb.gov.tw/m/f/taiwan/63.htm");
+
+    }
+}
