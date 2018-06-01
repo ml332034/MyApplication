@@ -18,8 +18,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".FragmentSetting"></activity>
-        <activity android:name=".WeatherActivity"></activity>
+        <activity android:name=".FragmentSetting" />
+        <activity android:name=".WeatherActivity" />
+        <activity android:name=".HoroscopeActivity"></activity>
     </application>
 
 </manifest>

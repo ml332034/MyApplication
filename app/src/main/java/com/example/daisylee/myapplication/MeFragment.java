@@ -21,6 +21,7 @@ public class MeFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_me, container, false);
         Button nextPageBtn = (Button) view.findViewById(R.id.button3);
         Button nextPageBtn1 = (Button) view.findViewById(R.id.weather);
+        Button nextPageBtn2 = (Button) view.findViewById(R.id.horoscope);
         nextPageBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -32,6 +33,13 @@ public class MeFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getActivity(),WeatherActivity.class));
+
+            }
+        });
+        nextPageBtn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(),HoroscopeActivity.class));
 
             }
         });
