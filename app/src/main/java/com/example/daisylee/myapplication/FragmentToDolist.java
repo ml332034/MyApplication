@@ -20,4 +20,5 @@ public class FragmentToDolist extends Fragment {
         view = inflater.inflate(R.layout.fragment_tab_todolist,container,false);
         return view;
     }
+
 }

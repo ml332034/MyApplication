@@ -19,13 +19,7 @@
             android:textAlignment="center"
             android:textColor="#000"
             android:layout_marginTop="5dp"
-            android:layout_marginLeft="100dp"/>
-        <ImageButton
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:id="@+id/buttonCircleAddEvent"
-            android:background="@drawable/btn_circle"
-            android:layout_marginLeft="20dp"/>
+            android:layout_marginLeft="110dp"/>
     </LinearLayout>
 
     <LinearLayout
@@ -33,9 +27,9 @@
         android:layout_height="wrap_content"
         android:background="#fff"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="30dp">
+        android:layout_marginTop="20dp">
         <CalendarView
-            android:id="@+id/calenderView"
+            android:id="@+id/calendarView"
             android:layout_width="wrap_content"
             android:layout_height="350dp"
             android:background="@drawable/bg_calendar">
