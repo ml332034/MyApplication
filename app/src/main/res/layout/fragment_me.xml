@@ -123,5 +123,14 @@
         android:text="星座運勢"
         android:textColor="#FFFFFF"
         android:textSize="20sp" />
+    <Button
+        android:id="@+id/news"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/horoscope"
+        android:background="@drawable/news_image"
+        android:text="新聞"
+        android:textColor="#000000"
+        android:textSize="20sp" />
 
 </RelativeLayout>

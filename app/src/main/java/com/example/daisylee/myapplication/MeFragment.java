@@ -22,6 +22,7 @@ public class MeFragment extends Fragment {
         Button nextPageBtn = (Button) view.findViewById(R.id.button3);
         Button nextPageBtn1 = (Button) view.findViewById(R.id.weather);
         Button nextPageBtn2 = (Button) view.findViewById(R.id.horoscope);
+        Button nextPageBtn3 = (Button) view.findViewById(R.id.news);
         nextPageBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -40,6 +41,13 @@ public class MeFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getActivity(),HoroscopeActivity.class));
+
+            }
+        });
+        nextPageBtn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(),NewsActivity.class));
 
             }
         });

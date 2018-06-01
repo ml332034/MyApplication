@@ -20,7 +20,8 @@
         </activity>
         <activity android:name=".FragmentSetting" />
         <activity android:name=".WeatherActivity" />
-        <activity android:name=".HoroscopeActivity"></activity>
+        <activity android:name=".HoroscopeActivity" />
+        <activity android:name=".NewsActivity"></activity>
     </application>
 
 </manifest>
